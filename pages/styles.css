@@ -1,0 +1,392 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background-color: #18254f;
+            height: 850px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 13%;
+        }
+        
+        .logo img {
+            width: 65px;
+            height: 65px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            font-family: 'Inter', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #b03c74;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 64px 14%;
+           
+        }
+        
+        .hero-content {
+            max-width: 500px;
+            margin-top: 50px;
+        }
+        
+        .hero-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        
+        .hero-title .highlight {
+            color: #b03c74;
+        }
+        
+        .hero-description {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        
+        .register-btn {
+            background-color: #b03c74;
+            border-radius: 25px;
+            padding: 10px 30px;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .register-btn:hover {
+            background-color: #d04c8e;
+        }
+        
+        .register-btn span {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        .hero-image img {
+            width: 641px;
+            height: auto;
+        }
+        
+        .cloud-img {
+            position: absolute;
+            bottom: -19px;
+            width: 106%;
+            height: 155px;
+            z-index: 2;
+        }
+        
+        .main-content {
+            padding: 100px 14% 50px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 41px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .section-description {
+            font-family: 'Albert Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #000000;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 50px;
+        }
+        
+        .pink-line {
+            width: 61px;
+            height: 2px;
+            background-color: #b03c74;
+            margin: 0 auto 50px;
+        }
+        
+        .events-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 0px;
+            margin-bottom: 100px;
+        }
+        
+        .event-card {
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 319px;
+            height: 277px;
+            transition: transform 0.3s;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .event-card.orange {
+            background-color: #fe5722;
+        }
+        
+        .event-card.blue {
+            background-color: #2cc7ff;
+        }
+        
+        .event-card.green {
+            background-color: #4cb050;
+        }
+        
+        .event-card img {
+            width: 102px;
+            height: 102px;
+            border-radius: 8px;
+            margin-bottom: 14px;
+        }
+        
+        .event-card h3 {
+            font-family: 'Orienta', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            text-transform: capitalize;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .event-card p {
+            font-family: 'Orienta', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-align: center;
+        }
+        
+        .conclave-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        
+        .conclave-content {
+            max-width: 550px;
+        }
+        
+        .conclave-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 51px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .conclave-line {
+            width: 61px;
+            height: 5px;
+            background-color: #b03c74;
+            margin-bottom: 20px;
+        }
+        
+        .conclave-description {
+            font-family: 'Albert Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 24px;
+            color: #000000;
+        }
+        
+        .conclave-image img {
+            width: 502px;
+            height: auto;
+        }
+        
+        .speakers-section {
+            padding: 50px 0 100px;
+            position: relative;
+        }
+        
+        .speakers-title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 51px;
+            text-transform: capitalize;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .speakers-line {
+            width: 61px;
+            height: 5px;
+            background-color: #b03c74;
+            margin: 0 auto 50px;
+        }
+        
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .speaker-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .speaker-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .speaker-card img {
+            width: 118px;
+            height: 118px;
+            border-radius: 59px;
+            margin-bottom: 20px;
+        }
+        
+        .speaker-card h3 {
+            font-family: 'Orienta', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .speaker-card p {
+            font-family: 'Orienta', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            text-transform: capitalize;
+            color: #000000;
+            text-align: center;
+        }
+        
+        .bottom-pink {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 728px;
+            z-index: -1;
+        }
+        
+        @media (max-width: 1200px) {
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .hero-content {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+            
+            .hero-image img {
+                width: 100%;
+                max-width: 500px;
+                height: 74%;
+            }
+            
+            .events-container {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .conclave-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .conclave-line {
+                margin: 0 auto 20px;
+            }
+            
+            .conclave-image img {
+                width: 100%;
+                max-width: 400px;
+                margin-top: 30px;
+            }
+            
+            .speakers-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav {
+                padding: 20px;
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 20px;
+            }
+            
+            .main-content {
+                padding: 50px 20px;
+            }
+            
+            .speakers-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+ 
